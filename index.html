@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
-    <link rel="icon" type="image/jpg" href="./src/assets/images/expense-tracker.jpg">
-    <title>Expense Tracker</title>
-</head>
-<body>
-    <div class="expense-tracker">
-        <div class="form">
-            <div class="form-titles">
-                <label class="name">Name</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
+        <link rel="icon" type="image/jpg" href="./src/assets/images/expense-tracker.jpg">
+        <title>Expense Tracker</title>
+    </head>
+    <body>
+        <div class="expense-tracker">
+            <div class="form">
+                <div class="form-titles font-bold font-segoe">
+                    <label class="name">Name</label>
 
-                <label class="amount">Amount</label>
-            </div>
-            
-            <div class="expense">
-                <div class="expense-inputs">
-                    <input type="text" id="expense-name" class="name-input" placeholder="Expense Name">
-                    
-                    <input id="expense-amount" class="amount-input" placeholder="Expense Amount" type="number" required name="price" min="0" step=".01">
+                    <label class="amount">Amount</label>
                 </div>
+                
+                <div class="expense">
+                    <div class="expense-inputs">
+                        <input type="text" id="expense-name" class="name-input" placeholder="Expense Name">
+                        
+                        <input id="expense-amount" class="amount-input" placeholder="Expense Amount" type="number" min="0" step=".01">
+                    </div>
 
-                <button id="add-btn">Add</button>
+                    <button id="add-btn" class="add-btn">Add</button>
+                </div>
             </div>
+    
+            <table id="expense-table" class="expense-table font-segoe">
+                <thead>
+                    <tr class="table-head font-bold">
+                        <th>Expense Name</th>
+
+                        <th>Amount</th>
+
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="expense-table-tr">
+                </tbody>
+
+                <tfoot>
+                    <tr class="font-bold">
+                        <td>Total Amount</td>
+                        <td id="total" class="total">0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
- 
-        <table id="expense-table">
-            <thead>
-                <tr>
-                    <th>Expense Name</th>
 
-                    <th>Amount</th>
-
-                    <th>Delete</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr id="expense-table-tr"></tr>
-
-                <tr>
-                    <td>Total Amount</td>
-                    <td id="total"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <script src="./src/js/script.js"></script>
-</body>
+        <script src="./src/js/script.js"></script>
+    </body>
 </html>

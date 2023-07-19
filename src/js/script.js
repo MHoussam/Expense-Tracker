@@ -2,10 +2,16 @@ let total_amount=0;
 
 function expenseItemElement(name, amount) {
     return `<tr>
-        <td>
-        <span class="text">${name}</span>  
-        <span class="number">${amount}</span>      
-        <button class="delete">&#128465</button>
+        <td class="text">
+          ${name}  
+        </td>
+
+        <td class="number">
+          ${amount}     
+        </td>
+
+        <td class="delete">
+          &#128465
         </td>
     </tr>`
   }

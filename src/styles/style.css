@@ -1,4 +1,83 @@
+.expense-tracker {
+    width: 60%;
+    padding: 8% 0 8% 18%;
+    background-color: rgb(172, 255, 225);
+    margin: 7% 5% 5% 10%;
+    border-radius: 3%;
+}
+
+.form {
+    margin-bottom: 2%;
+    margin-right: 0;
+    width: 83%;
+}
+
 .form-titles, .expense {
     display: flex;
 }
 
+.form-titles {
+    width: 64%;
+    column-gap: 43%;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-segoe {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.expense {
+    width: 100%;
+}
+
+.expense-inputs {
+    display: flex;
+    width: 70%;
+    column-gap: 2%;
+}
+
+.add-btn {
+    width: 10%;
+    cursor: pointer;
+    background-color: rgb(6, 153, 245);
+    border-radius: 10px;
+}
+
+.name-input, .amount-input {
+    width: 45%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+}
+
+.expense-table {
+    width: 66.5%;
+    border: 2px solid black;
+    margin: 0;
+}
+
+th, td {
+    border: 2px solid rgb(104, 104, 104);
+    padding: 1%;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.delete {
+    background-color: rgb(255, 11, 11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.text, .number, .delete {
+    padding-left: 2%;
+}
