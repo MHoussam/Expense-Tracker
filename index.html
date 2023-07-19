@@ -12,21 +12,37 @@
     <div class="expense-tracker">
         <div class="form">
             <div class="form-titles">
-                <h3 class="name">Name</h3>
+                <label class="name">Name</label>
 
-                <h3 class="amount">Amount</h3>
+                <label class="amount">Amount</label>
             </div>
             
             <div class="expense">
                 <div class="expense-inputs">
                     <input type="text" id="expense-name" class="name-input" placeholder="Expense Name">
                     
-                    <input type="text" id="expense-amount" class="amount-input" placeholder="Expense Amount">
+                    <input id="expense-amount" class="amount-input" placeholder="Expense Amount" type="number" required name="price" min="0" step=".01">
                 </div>
 
                 <button id="add-btn">Add</button>
             </div>
         </div>
+ 
+        <table id="expense-table">
+            <thead>
+                <tr>
+                    <th>Expense Name</th>
+
+                    <th>Amount</th>
+
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr id="expense-table-tr"></tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="./src/js/script.js"></script>
